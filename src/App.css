@@ -1,38 +1,160 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+}
+html,
+body {
+  font-size: 22px;
+  overflow-x: hidden;
+  color: seashell;
+}
+
+#brand-logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+#nav {
+  height: 69px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+ul.nav-items {
+  display: flex;
+  text-align: right;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+ul.nav-items li {
+  text-decoration: underline;
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.mission {
+  position: relative;
+  top: 69px;
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-message {
+  width: 100vw;
+  background-image: url(./assets/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.mission-message h2 {
+  width: 100vw;
+  text-align: center;
+}
+.mission-message h4 {
+  width: 100vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.featured-message {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.featured-items {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.featured-item img {
+  width: 300px;
+  height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.featured-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.location-section {
+  height: 500px;
+  width: 100vw;
+  background-image: url(./assets/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 3em;
 }
 
-.App-link {
-  color: #61dafb;
+.location-header {
+  opacity: 1;
+  height: 100px;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.locations {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.location {
+  width: 300px;
+  line-height: 1.75;
+  background-color: black;
+  opacity: 1;
+}
+
+footer {
+  height: 170px;
+  width: 100vw;
+}
+
+footer aside {
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+footer h5 {
+  display: flex;
+  justify-items: baseline;
+  margin-top: 1em;
+  margin-left: 1em;
 }
